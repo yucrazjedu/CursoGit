@@ -1,1 +1,6 @@
 /* Archivo de estilos personalizado */
+.notification-roja {
+  background-color: rgb(192, 109, 109);
+  color: #fafafa;
+  font-size: 15px;
+}
