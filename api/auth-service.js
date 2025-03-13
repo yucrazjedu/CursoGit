@@ -4,7 +4,7 @@ async function login(user_name, password) {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ user_name, password }),
+    body: JSON.stringify({ username: user_name, password: password }),
   });
   const data = await response.json();
   if (data.error) {
