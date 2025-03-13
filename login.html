@@ -22,5 +22,19 @@
     </form>
 
     <script src="./api/auth-service.js"></script>
+
+    <script>
+      var sesion_id = "";
+      var user_id = "";
+
+      function guardar_sesion() {
+        localStorage.setItem(
+          "sesion_id",
+          JSON.stringify({ sesion: sesion_id, user: user_id })
+        );
+      }
+
+      guardar_sesion();
+    </script>
   </body>
 </html>

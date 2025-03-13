@@ -12,14 +12,16 @@
         <h1>Mis noticias</h1>
     </section>
 
-    <?php foreach ($noticias as $noticia) : ?>
-        <div class="card text-left">
-            <div class="card-body">
-                <h4 class="card-title"><?php echo $noticia["titulo"] ?></h4>
-                <p class="card-text"><?php echo $noticia["contenido"] ?></p>
+    <?php if (isset($noticias) && !empty($noticia)) : ?>
+        <?php foreach ($noticias as $noticia) : ?>
+            <div class="card text-left">
+                <div class="card-body">
+                    <h4 class="card-title"><?php echo $noticia["titulo"] ?></h4>
+                    <p class="card-text"><?php echo $noticia["contenido"] ?></p>
+                </div>
             </div>
-        </div>
-    <?php endforeach ?>
+        <?php endforeach ?>
+    <?php endif ?>
 </body>
 
 </html>
