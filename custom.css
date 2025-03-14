@@ -10,3 +10,8 @@
   border:1px solid red;
   border-radius:15px;
 }
+
+.btn-primary{
+  color: white;
+  background-color: rgba(147, 55, 31, 0.5);
+}
